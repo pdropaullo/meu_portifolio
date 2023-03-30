@@ -2,57 +2,275 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
-button{
+a {
+    color: white;
+}
+
+#pedro {
+    text-decoration: underline;
+}
+
+#minhas_redes{
+    color: gray;
+    text-decoration: underline;
+}
+
+i {
+    cursor: pointer;
+    opacity: .8;
+}
+
+button {
     background-color: yellow;
     border: none;
     border-radius: 10px;
     width: 150px;
     height: 60px;
     font-size: 20px;
+    font-weight: bold;
+    transition: .4s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-nav{
-    background-color: blue;
+button:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+nav {
+    background-color: #2e2e2e;
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 10vh;
     justify-content: space-between;
+    padding: 2%;
+    position: fixed;
 }
 
 .identificacao{
     display: flex;
     width: 30%;
     align-items: center;
+    font-size: 20px;
 }
 
-.identificacao > img{
-    border-radius: 50px;
-}
-
-.menus{
+.identificacao>a{
     display: flex;
-    width: 500px;
+    align-items: center;
+    transition: .4s;
+}
+
+.identificacao>a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+.identificacao>a>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.menus {
+    display: flex;
+    width: 30%;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 20px;
 }
 
-header{
-    background-color: green;
+.menus>a{
+    transition: .4s;
+}
+
+.menus>a:hover{
+    color: yellow;
+}
+
+header {
+    background-image: url(img_fundo.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.centro{
+.centro {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 200px;
+    height: 30%;
     margin: auto;
     justify-content: space-between;
+}
+
+.centro>h1,
+.centro>h3 {
+    color: white;
+}
+
+.sobre_mim,
+.projetos,
+.contato {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos{
+    background-image: url(img_fundo.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    width: 50%;
+    text-align: center;
+}
+
+.descricao {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+}
+
+.me_conheca {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60vh;
+    justify-content: space-evenly;
+}
+
+.my_skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60vh;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 250px;
+}
+
+.skills>h3 {
+    background-color: #d3d3d3;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.projeto {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
+
+.imagem {
+    display: flex;
+    width: 50%;
+}
+
+.imagem>img {
+    width: 450px;
+    height: 250px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.info_contato {
+    background-color: #d3d3d3;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.align_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.insert>p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.insert>input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #2e2e2e;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.pessoal_infos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.pedro_paulo>h3,
+.social_icons>h3 {
+    margin-bottom: 20px;
+}
+
+.icons>a>i {
+    margin-right: 10px;
+    font-size: 30px
+}
+
+.rodape {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
 }

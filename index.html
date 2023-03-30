@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pedro Paulo - Meu Portifólio</title>
 </head>
@@ -15,75 +16,79 @@
 <body>
     <nav>
         <div class="identificacao">
-            <img src="img_pedro_paulo.jpg" alt="" width="80px" height="80px">
-            <h3>Pedro Paulo</h3>
+            <a href="https://pdropaullo.github.io/meu_portifolio/">
+                <img src="img_pedro_paulo.jpg" alt="">
+                <h2>Pedro Paulo</h2>
+            </a>
         </div>
         <div class="menus">
-            <a href="">INÍCIO</a>
-            <a href="">SOBRE</a>
-            <a href="">PROJETOS</a>
-            <a href="">CONTATO</a>
+            <a href="#inicio">INÍCIO</a>
+            <a href="#sobre_mim">SOBRE</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#contato">CONTATO</a>
         </div>
     </nav>
-    <header>
+    <header id="inicio">
+        <!-- <div class="fundo"> -->
+        <!-- <img src="img_fundo.jpg" alt=""> -->
         <div class="centro">
             <h1>OLÁ, EU SOU PEDRO PAULO</h1>
-            <h4>Um desenvolvedor em desenvolvimento...</h4>
-            <button>PROJETOS</button>
+            <h3>Um desenvolvedor em desenvolvimento...</h3>
+            <a href="#projetos"><button>PROJETOS</button></a>
         </div>
+        <!-- </div> -->
     </header>
-    <div class="sobre_mim">
+    <div class="sobre_mim" id="sobre_mim">
         <div class="titulo">
             <h1>SOBRE MIM</h1>
-            <h4>Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais principalmente
-                em termos de programação e tecnologia</h4>
+            <h3>Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais principalmente
+                em termos de programação e tecnologia</h3>
         </div>
         <div class="descricao">
             <div class="me_conheca">
-                <h3>Me conheça!</h3>
-                <h4>Estou na 4ª fase do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia SENAC
-                    Palhoça.</h4>
-                <h4>Gosto muito da área de games, principalmente consoles e em específico os da marca Sony PlayStation.
-                </h4>
-                <h4>Procurando oportunidades para iniciar profissionalmente na área de tecnologia da informação.</h4>
-                <h4>Se conecte comigo através das minhas redes, mais abaixo.</h4>
-                <button>CONTATO</button>
+                <h2>Me conheça!</h2>
+                <h3>Estou na 4ª fase do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia SENAC
+                    Palhoça.</h3>
+                <h3>Sou apaixonado por videogames e coleções.</h3>
+                <h3>Procurando oportunidades para iniciar profissionalmente na área de tecnologia da informação.</h3>
+                <h3>Se conecte comigo através das <a href="#footer" id="minhas_redes">minhas redes</a>, mais abaixo.</h3>
+                <a href="#contato"><button>CONTATO</button></a>
             </div>
             <div class="my_skills">
-                <h3>My Skills</h3>
+                <h2>My Skills</h2>
                 <div class="skills">
-                    <button>JAVA</button>
-                    <button>JavaScipt</button>
-                    <button>HTML</button>
-                    <button>CSS</button>
-                    <button>Python</button>
-                    <button>MySQL</button>
+                    <h3>JAVA</h3>
+                    <h3>JavaScipt</h3>
+                    <h3>HTML</h3>
+                    <h3>CSS</h3>
+                    <h3>Python</h3>
+                    <h3>MySQL</h3>
                 </div>
             </div>
         </div>
     </div>
-    <div class="projetos">
+    <div class="projetos" id="projetos">
         <div class="titulo">
             <h1>PROJETOS</h1>
-            <h4>Aqui você encontrará alguns projetos que desenvolvi durante o meu curso</h4>
+            <h3>Aqui você encontrará alguns projetos que desenvolvi durante o meu curso</h3>
         </div>
         <div class="projeto">
-            <div class="img">
-                <img src="" alt="">
+            <div class="imagem">
+                <img src="img_peaceful_travels.jpg" alt="">
             </div>
             <div class="infos">
-                <h3>Viagens Tranquilas</h3>
-                <h4>Viagens Tranquilas, foi desenvolvido durante uma atividade avaliativa da disciplina de
-                    Desenvolvimento para Web com o Professor Wildson Caio</h4>
-                <button>ACESSE</button>
+                <h2>Peaceful Travels</h2>
+                <h3>Peaceful Travels, foi desenvolvido durante uma atividade avaliativa da disciplina de
+                    Desenvolvimento para Web com o Professor Wildson Caio</h3>
+                <a href="https://pdropaullo.github.io/peaceful_travels/"><button>ACESSE</button></a>
             </div>
         </div>
     </div>
-    <div class="contato">
+    <div class="contato" id="contato">
         <div class="titulo">
             <h1>CONTATO</h1>
-            <h4>Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve
-                possível</h4>
+            <h3>Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve
+                possível</h3>
         </div>
         <div class="info_contato">
             <div class="insert">
@@ -98,24 +103,29 @@
                 <p>Mensagem</p>
                 <input type="text" placeholder="Insira Sua Mensagem">
             </div>
-            <button>ENVIAR</button>
+            <div class="align_right">
+                <button>ENVIAR</button>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="pedro_paulo">
-            <h4>Pedro Paulo</h4>
-            <p>Um desenvolvedor em desenvolvimento...</p>
-        </div>
-        <div class="social_icons">
-            <h4>SOCIAL</h4>
-            <div class="icons">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-instagram"></i>
+    <footer id="footer">
+        <div class="pessoal_infos">
+            <div class="pedro_paulo">
+                <h3>PEDRO PAULO</h3>
+                <h4>Um desenvolvedor em desenvolvimento...</h4>
+            </div>
+            <div class="social_icons">
+                <h3>SOCIAL</h3>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/pdropaullo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/pdropaullo"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/pdropaullo/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </div>
         <div class="rodape">
-            <p>ⓒ Copyright 2023. Made by <a href="">Pedro Paulo</a></p>
+            <p>ⓒ Copyright 2023. Made by <a href="https://pdropaullo.github.io/meu_portifolio/" id="pedro">Pedro
+                    Paulo</a></p>
         </div>
     </footer>
 </body>
