@@ -322,14 +322,14 @@ footer {
 
 #titulo_projeto{
     margin: auto;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .menu_sanduiche{
     display: none;
 }
 
-@media (max-width: 330px) {
+@media (max-width: 412px) {
 
     .identificacao>a>h2{
         font-size: 20px;
